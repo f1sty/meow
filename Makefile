@@ -3,6 +3,6 @@
 all: meow
 
 meow: src/meow.c
-	$(CC) -o $@ $<
+	$(CC) -Wall -Wextra -pedantic -ggdb -o $@ $<
 clean:
 	rm -f meow{,.o}
