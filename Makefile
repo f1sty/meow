@@ -2,7 +2,7 @@
 
 all: meow
 
-meow: meow.c
+meow: src/meow.c
 	$(CC) -o $@ $<
 clean:
 	rm -f meow{,.o}
